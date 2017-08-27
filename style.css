@@ -1,6 +1,9 @@
 <!-- Bootstrap and CSS here-->
     <style>
-      body {
+      html {
+		  box-sizing: 'border-box'
+		  }
+	  body {
 	  	  background-image: url(hip-square.png);
 		  background-repeat: repeat;
 		  background-attachment: scroll;
@@ -8,20 +11,54 @@
 	  .center {
         text-align: center;
       }
+	  #player-input {
+	  	  border-radius: 50%;
+		  font-size: 60px;
+		  width: 160px;
+		  height: 160px;
+	  }
+	  #submit-btn {
+	  	  border-radius: 50%;
+		  width: 60px;
+		  height: 60px;
+	  }
       ul {
           list-style: none;
           padding: 0;
       }
+	  #guesses {
+	  	  margin: 5px;
+	  }
+	  .guess{
+	  	  display: inline;
+		  border-radius: 5px;
+		  border: 1px solid black;
+		  padding: 0 10px;
+		  margin: 5px;
+		  background-color: white;
+	  }
       img {
           display: inline;
-          width: 200px;
+          /*width: 200px;*/
           height: 100px;
       }
+	  #main {
+	  	  background-color: rgba(234,192,247,.5);
+		  border-radius: 5px;
+		  padding: 5px;
+	  }
       #footer {
           width: 100%;
           border-top: solid 2px black;
           background-color: white;
           position: fixed;
-          bottom: 0;
+          bottom: 0;		  
       }
+	  #footer div {
+	  	  
+	  }
+	  #footer div div {
+		text-align: center;
+		
+	  }
     </style>

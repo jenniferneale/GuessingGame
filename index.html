@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <title>Guessing Game</title>
-    
-	<!--<link rel='stylesheet' type='text/css' href='bootstrap.min.css'>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet' type='text/css' href='bootstrap.min.css'>
 	<link rel='stylesheet' type='text/css' href='style.css'>
 
   </head>
   <body>
 
-      <div id='app'>
+      <div id='app' class="center container">
 
         <div id='headers'>
           <!-- Title and subtitles! -->
@@ -21,22 +21,26 @@
           <div id='input-parent'>
             <!-- Player's guess input, and submit button -->
 			<form>
-				<input type="text" name="guess" autofocus="autofocus" maxlength=3 placeholder=0>
-				<button id="submit-btn">Submit</button>
+				<input type="text" name="guess" class="text-center" id="player-input" autofocus="autofocus" maxlength=3 placeholder=0>
+				<button class="btn btn-success" id="submit-btn">Go!</button>
 			</form>
           </div>
 
-          <div id='guesses'>
+          <div id='guesses' class=''>
             <!-- unordered list of guesses -->
 			<ul id="guess-list">
-
+				<li class="guess">1</li>
+				<li class="guess">2</li>
+				<li class="guess">3</li>
+				<li class="guess">4</li>
+				<li class="guess">5</li>
 			</ul>
           </div>
 
-          <div id="menu-btns">
+          <div id="menu-btns" class='row'>
             <!-- reset and hint buttons -->
-			<button id="reset-btn">Reset</button>
-			<button id="hint-btn">Hint</button>
+			<button class="btn btn-default" id="reset-btn">Reset</button>
+			<button class="btn btn-default" id="hint-btn">Hint</button>
           </div>
         </div>
       </div>
@@ -44,17 +48,17 @@
 
 
     <div id='footer'>
-        <div>
-          <div class=''>
-            <img src='fa-logo@2x.png'></img>
+        <div class='row'>
+          <div class='col-md-4 col-sm-12'>
+            <img class='img-responsive' src='fa-logo@2x.png'></img>
           </div>
 
-          <div class=''>
-            <h4>Project by YOUR NAME HERE</h4>
+          <div class='col-md-4 col-sm-12'>
+            <h4>Project by Jennifer Neale, 2017</h4>
           </div>
 
-          <div class=''>
-            <img src='grace_hopper_academy.png'></img>			
+          <div class='col-md-4 col-sm-12'>
+            <img class='img-responsive' src='grace_hopper_academy.png'></img>			
           </div>
 
 
